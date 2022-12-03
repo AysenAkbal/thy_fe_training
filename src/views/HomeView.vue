@@ -3,7 +3,7 @@
 import Card from "../components/design_system/Card.vue"
 import Button from "../components/design_system/Button.vue"
 import InfoBlockVue from "../components/common/InfoBlock.vue";
-import TabLayoutVue from "../components/design_system/TabLayout.vue";
+import TabLayoutVue from "../components/for_view/TabLayout.vue";
 
 export default {
   prop: {

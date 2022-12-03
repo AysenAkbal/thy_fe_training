@@ -1,6 +1,6 @@
 <template>
   <div class="input-area">
-        <div class="input-area_field">
+        <div class="input-area-field">
             <label class="booker-text-label" for="ticketNo">{{label}}</label>
             <input type="search" id="ticketNo" maxlength="13" class="tk-booker-input"/>
         </div>

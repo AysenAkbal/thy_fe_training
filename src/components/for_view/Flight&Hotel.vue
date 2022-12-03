@@ -1,8 +1,6 @@
 <template>
     <Input class="col-sm-5" :label="label1"></Input>
     <Input class="col-sm-5" :label="label2"></Input>
-    <Button class="col-sm-2 mb-1" :butonLabel="butonLabel"></Button>
-    <textLink class="col-sm-6" :link="link" :textLink="textLink"></textLink>
 </template>
 
 <script>
@@ -24,7 +22,7 @@ export default {
         Input,
         Button,
         TextLink
-    },
+    }
 }
 </script>
 

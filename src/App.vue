@@ -1,6 +1,6 @@
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import TabLayoutVue from "./components/design_system/TabLayout.vue";
+import TabLayoutVue from "./components/for_view/TabLayout.vue";
 
 export default {
   components: {

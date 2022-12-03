@@ -1,8 +1,9 @@
 <template>
-    <Input class="col-sm-5" :label="label1"></Input>
-    <Input class="col-sm-5" :label="label2"></Input>
-    <Button class="col-sm-2 mb-1" :butonLabel="butonLabel"></Button>
-    <textLink class="col-sm-6" :link="link" :textLink="textLink"></textLink>
+  <Input class="col-sm-5" :label="label1"></Input>
+  <Input class="col-sm-5" :label="label2"></Input>
+  <Button class="col-sm-2 mb-1" :butonLabel="butonLabel"></Button>
+  <textLink class="col-sm-6" :link="link" :textLink="textLink"></textLink>
+
 </template>
 
 <script>
@@ -25,9 +26,26 @@ export default {
         Button,
         TextLink
     },
+    methods: {
+
+    }
+
 }
 </script>
 
 <style>
+.btn {
+    height: 66px!important;
+    border-radius: 3px;
+    background: #E81932!important;
+    border: none!important;
+    color: #fff!important;
+    border-bottom: none!important;
+    opacity: 1!important;
+}
+
+.red {
+    color: #E81932;
+}
 
 </style>

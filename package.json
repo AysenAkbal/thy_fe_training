@@ -28,7 +28,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.3",
-    "postcss-rtl": "^3.5.3",
+    "postcss-rtl": "^2.0.0",
     "prettier": "^2.7.1",
     "pug": "^3.0.2",
     "sass": "^1.56.1",

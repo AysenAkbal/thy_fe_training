@@ -1,5 +1,7 @@
 <template>
-    <button class="btn col-sm-2" :style="{ backgroundColor: bgColor }">{{butonLabel}}</button>
+    <div>
+        <button class="btn w-100" :style="{ backgroundColor: bgColor }">{{butonLabel}}</button>
+    </div>
 </template>
 
 <script>
