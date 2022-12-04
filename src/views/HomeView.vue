@@ -6,7 +6,7 @@ import InfoBlockVue from "../components/common/InfoBlock.vue";
 import TabLayoutVue from "../components/for_view/TabLayout.vue";
 
 export default {
-  prop: {
+  props: {
     
   },
   components: {
@@ -42,8 +42,8 @@ export default {
 <template>
 <TabLayoutVue></TabLayoutVue>
   <div class="tk-booker-nav">
-    <div class="mb5">
-      <div class="text-center bookings-buttons fadeIn animated huge delay20 flipInX">
+    <div>
+      <div class="bookings-buttons">
         <ul class="tk-booker-bottom-tabs">
           <li class="tk-booker-bottom-tab" v-for="card in cardInfo" :key="card.title">
             <Card v-bind:title="card.title" v-bind:content="card.content"></Card>

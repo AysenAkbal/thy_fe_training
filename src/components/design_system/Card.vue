@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-    <a class="ws-normal" href="https://www.turkishairlines.com/tr-tr/ek-hizmetler/">
+    <a href="https://www.turkishairlines.com/tr-tr/ek-hizmetler/">
     <div class="tk-booker-bottom-tab-content">
         <div class="content-icon">
             <div class="icon"></div>

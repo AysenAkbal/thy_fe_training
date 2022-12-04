@@ -31,7 +31,10 @@ export default {
                             </div>
                         </div> 
                         <div class="info-text"> 
-                            <p>Değerli Yolcularımız,</p><p>Ukrayna, Belarus ve Rusya uçuşlarımıza ilişkin duyurulara ve bu ülkelere yaptığımız uçuşlarımız için yolcularımıza tanınan haklara <a href="/tr-tr/duyurular/ukrayna-moldova-belarus-rusya-seferleri/" target="_blank">buradan</a> erişebilirsiniz.</p> 
+                            <p>Değerli Yolcularımız,</p>
+                            <p>Ukrayna, Belarus ve Rusya uçuşlarımıza ilişkin duyurulara ve bu ülkelere yaptığımız uçuşlarımız için yolcularımıza tanınan haklara 
+                                <a href="/tr-tr/duyurular/ukrayna-moldova-belarus-rusya-seferleri/" target="_blank">buradan</a>
+                             erişebilirsiniz.</p> 
                         </div> 
                     </div> 
                 </div> 
@@ -47,7 +50,7 @@ export default {
 
 }
 .container {
-    display:table;
+    display: table;
     padding-left: 0;
     padding-right: 0;
     margin-left: 30px;
