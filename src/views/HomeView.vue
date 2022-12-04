@@ -1,59 +1,39 @@
-
-<script>
-import Card from "../components/design_system/Card.vue"
-import Button from "../components/design_system/Button.vue"
+<script setup>
+import Card from "../components/design_system/Card.vue";
+import Button from "../components/design_system/Button.vue";
 import InfoBlockVue from "../components/common/InfoBlock.vue";
 import TabLayoutVue from "../components/for_view/TabLayout.vue";
 
-export default {
-  props: {
-    
+const cardInfo = [
+  {
+    title: "Ek Hizmetler",
+    content:
+      "Seyahatinizi zenginleştirmenizi sağlayacak otel rezervasyonu ve araç kiralama gibi hizmetlerimizden faydalanabilirsiniz.",
   },
-  components: {
-    Card,
-    Button,
-    InfoBlockVue, 
-    TabLayoutVue
+  {
+    title: "Seyahat Gereksinimleri",
+    content:
+      "İnteraktif harita uygulamamızı kullanarak ülkelerin güncel seyahat gereksinimlerine erişebilirsiniz.",
   },
-  data() {
-    return {
-      cardInfo: [
-        {
-          title: 'Ek Hizmetler' ,
-          content: 'Seyahatinizi zenginleştirmenizi sağlayacak otel rezervasyonu ve araç kiralama gibi hizmetlerimizden faydalanabilirsiniz.'
-        },
-        { 
-          title:'Seyahat Gereksinimleri' ,
-           content: 'İnteraktif harita uygulamamızı kullanarak ülkelerin güncel seyahat gereksinimlerine erişebilirsiniz.'
-        },
-        {
-          title:'Turkish Airlines Gift Card' , 
-          content:'Turkish Airlines Gift Card satın alarak sevdiklerinize sürpriz bir seyahat deneyimi armağan edebilir, onlara yeni yerler keşfetmenin heyecanını yaşatabilirsiniz.' 
-        }
-      ]
-    }
+  {
+    title: "Turkish Airlines Gift Card",
+    content:
+      "Turkish Airlines Gift Card satın alarak sevdiklerinize sürpriz bir seyahat deneyimi armağan edebilir, onlara yeni yerler keşfetmenin heyecanını yaşatabilirsiniz.",
   },
-  methods: {
-    
-  },
-};
+];
 </script>
 
 <template>
-<TabLayoutVue></TabLayoutVue>
-  <div class="tk-booker-nav">
-    <div>
-      <div class="bookings-buttons">
-        <ul class="tk-booker-bottom-tabs">
-          <li class="tk-booker-bottom-tab" v-for="card in cardInfo" :key="card.title">
-            <Card v-bind:title="card.title" v-bind:content="card.content"></Card>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <InfoBlockVue></InfoBlockVue>
-
+  <TabLayoutVue />
+  <section>
+    <Card
+      v-for="card in cardInfo"
+      :key="card.title"
+      :title="card.title"
+      :content="card.content"
+    ></Card>
+  </section>
+  <InfoBlockVue />
 </template>
 
 <style scoped>
@@ -61,18 +41,16 @@ export default {
   margin-bottom: 10px;
   margin-top: 30px;
   display: flex;
-
 }
 .tk-booker-bottom-tabs {
   list-style-type: none;
   padding: 0;
   margin-bottom: 30px;
   display: flex;
-
 }
 
 .tk-booker-bottom-tab {
-  width: calc((100% - 2 * 2rem)/ 3);
+  width: calc((100% - 2 * 2rem) / 3);
   background-color: #fff;
   margin-right: 2rem;
   border-radius: 3px;
@@ -80,9 +58,8 @@ export default {
 }
 
 @media (max-width: 767px) {
-  .tk-booker-nav{
+  .tk-booker-nav {
     display: none;
   }
-  
 }
 </style>
